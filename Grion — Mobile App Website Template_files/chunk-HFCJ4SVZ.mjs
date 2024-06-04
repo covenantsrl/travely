@@ -1,0 +1,2 @@
+function e(a,t){return{description:"Grion is a sleek and modern landing page template designed for mobile app owners and companies.",favicon:"https://framerusercontent.com/images/NXiPpPhkFpx2Ip8LcP1lL0kMLA.svg",socialImage:"https://framerusercontent.com/images/5eVuGXL04Ca3bmrwSR12fEr9zU.png",title:"Grion \u2014 Mobile App Website Template"}}export{e as a};
+//# sourceMappingURL=chunk-HFCJ4SVZ.mjs.map
