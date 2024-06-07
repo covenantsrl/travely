@@ -57,6 +57,14 @@
       padding-top: 15px;;
     }
     .overview-top {max-width: 480px;}
+    video {
+            filter: none;
+            background: none;
+            display: block;
+            width: 100%; /* Adjust as needed */
+            height: auto; /* Adjust as needed */
+            image-rendering: optimizeQuality; /* Try to force high-quality rendering */
+        }
 
   </style>
   <title>Travely - Travel itinerary management and tour building app</title>
@@ -199,6 +207,12 @@
           <div class="video-overlay">
 
           <video class="gallery-image" src="./files/new_cro.mp4" autoplay loop muted></video>
+          <script>
+            const video = document.querySelector('video');
+            video.addEventListener('loadeddata', () => {
+                video.style.filter = 'none';
+            });
+        </script>
 </div>
             <img
             src="./files/65e6d4e6aea690ee1851b0b8_app.webp" loading="lazy"
