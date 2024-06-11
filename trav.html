@@ -89,25 +89,42 @@
       /* Try to force high-quality rendering */
     }
     .overview-card {
-      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0 !important; grid-row-gap:0px;max-height: 300px; box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1);
-    }
-    .overview-card img {
-      border-radius: 50px !important;
-      padding: 30px !important;
-    }
-    .overview-card h3 {
-      padding: 20px 0px 0px 0px !important;
-      text-align: center !important;
-      font-size: 24px; font-weight: bold; width: 100%;
-    }
-    .overview-card p {
-      font-size: 14px;
-      text-align: center; width: 100%;
-      font-weight: 500;
-      line-height: 1.4;
-      padding: 0px 15px 0px 15px;
-    
-    }
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
+  overflow: hidden;
+  padding: 0 !important;
+  display: grid;
+  grid-template-rows: auto auto auto; /* 3 rows: one for each element */
+  grid-row-gap: 10px; /* General row gap */
+  max-height: 300px;
+  box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1);
+}
+
+.overview-card img {
+  border-radius: 20px; /* Adjusted from 50px to 20px */
+  padding: 0; /* Removed padding */
+  width: calc(100% - 20px); /* Adjusting width to fit within the card */
+  margin: 0 auto; /* Centering the image */
+}
+
+.overview-card h3 {
+  padding: 20px 0 0 0 !important; /* Top padding to separate from top of card */
+  text-align: center !important;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.overview-card p {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0 15px; /* Removed bottom padding */
+  margin-bottom: 10px; /* Adding margin to separate from image */
+}
       .hidden {
       display: none;
     }
