@@ -713,11 +713,17 @@ display: flex;"><svg color="rgba(246 176 60 / 100%)" width="20" height="20" xmln
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const userLang = navigator.language || navigator.userLanguage;
+    console.log('Detected Language:', userLang);
     const lang = userLang.startsWith('it') ? 'it' : 'en';
+    console.log('Using Language:', lang);
     
     document.querySelectorAll('.content').forEach(element => {
+      console.log('Element Language:', element.getAttribute('data-lang'));
       if (element.getAttribute('data-lang') === lang) {
+        console.log('Showing element:', element);
         element.classList.remove('hidden');
+      } else {
+        console.log('Hiding element:', element);
       }
     });
   });
