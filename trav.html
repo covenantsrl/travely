@@ -191,8 +191,8 @@
         <div data-w-id="653d6031-aa80-5f0c-561b-f7d572d05b1e" class="hero-wrapper"
           style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
           <img src="./files/icon.png" loading="lazy" width="102" alt="" class="hero-logo">
-          <h1 id="eng" class="hidden">Plan your travels easily.<br><span class="blue-underline">All in one place.</span></h1>
-          <h1 id="ita" class="hidden">Pianifica il tuo viaggio facile.<br><span class="blue-underline">Tieni tutto in un posto.</span></h1>
+          <h1 class="hidden" data-lang="en">Plan your travels easily.<br><span class="blue-underline">All in one place.</span></h1>
+          <h1 class="hidden" data-lang="it">Pianifica il tuo viaggio facile.<br><span class="blue-underline">Tieni tutto in un posto.</span></h1>
 
           <p class="hero-description" id="eng" class="hidden"><!--Travely è la super-app basata su AI per la pianificazione e gestione di itinerari
             di viaggi-->
@@ -236,11 +236,11 @@
         <div class="overview-wrapper">
           <div class="overview-top" 
             style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-            <h2 id="eng" class="hidden">Personalize your travel with customizable widgets</h2>
-            <h2 id="ita" class="hidden">Personalizza il viaggio con i widget che ti servono</h2>
-            <p id="ita" class="hidden">I widget ti permettono di avere ogni tipo di informazione aggiutiva sul viaggio, come il meteo della zona
+            <h2 data-lang="en" class="hidden">Personalize your travel with customizable widgets</h2>
+            <h2 data-lang="it" class="hidden">Personalizza il viaggio con i widget che ti servono</h2>
+            <p data-lang="it" class="hidden">I widget ti permettono di avere ogni tipo di informazione aggiutiva sul viaggio, come il meteo della zona
               di soggiorno, i documenti da portare, i vestiti consigliati , le notifiche sul volo, le spese da tracciare, il fuso orario, le prese elettriche da usare e tanti altri.</p>
-              <p id="eng" class="hidden">Widgets allow you to have all kinds of additional information about your trip, such as the local weather, useful documents, dress, packing lists, flight notifications, expense tracking, time zone, electrical outlet types, and much more.</p>
+              <p data-lang="en" class="hidden">Widgets allow you to have all kinds of additional information about your trip, such as the local weather, useful documents, dress, packing lists, flight notifications, expense tracking, time zone, electrical outlet types, and much more.</p>
           </div>
 
           <div><img src="./files/wid.png"></div>
@@ -713,11 +713,14 @@ display: flex;"><svg color="rgba(246 176 60 / 100%)" width="20" height="20" xmln
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const userLang = navigator.language || navigator.userLanguage;
-    if (userLang.includes('it')) {
-      document.getElementById('ita').classList.remove('hidden');
-    } else {
-      document.getElementById('eng').classList.remove('hidden');
-    }
+    const lang = userLang.includes('it') ? 'it' : 'en';
+    document.querySelectorAll('.content').forEach(section => {
+      if (section.getAttribute('data-lang') === lang) {
+        section.classList.remove('hidden');
+      } else {
+        section.classList.add('hidden');
+      }
+    });
   });
 </script>
 </html>
