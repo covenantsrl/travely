@@ -713,12 +713,11 @@ display: flex;"><svg color="rgba(246 176 60 / 100%)" width="20" height="20" xmln
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const userLang = navigator.language || navigator.userLanguage;
-    const lang = userLang.includes('it') ? 'it' : 'en';
-    document.querySelectorAll('.content').forEach(section => {
-      if (section.getAttribute('data-lang') === lang) {
-        section.classList.remove('hidden');
-      } else {
-        section.classList.add('hidden');
+    const lang = userLang.startsWith('it') ? 'it' : 'en';
+    
+    document.querySelectorAll('.content').forEach(element => {
+      if (element.getAttribute('data-lang') === lang) {
+        element.classList.remove('hidden');
       }
     });
   });
