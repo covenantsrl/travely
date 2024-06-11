@@ -90,6 +90,16 @@
     }
   </style>
   <title>Travely - Travel itinerary management and tour building app</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.includes('it')) {
+        window.location.href = 'trav.html';
+      } else {
+        window.location.href = 'trav-en.html';
+      }
+    });
+  </script>
   <meta content="Travely - Travel itinerary management and tour building app" name="description">
   <meta content="Travely - Travel itinerary management and tour building app" property="og:title">
   <meta content="Travely - Travel itinerary management and tour building app" property="og:description">
