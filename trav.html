@@ -89,15 +89,19 @@
       /* Try to force high-quality rendering */
     }
     .overview-card {
-      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px;max-height: 300px; box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1)
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0 !important; grid-row-gap:0px;max-height: 300px; box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1);
+    }
+    .overview-card img {
+      border-radius: 50px !important;
+      padding: 30px !important;
     }
     .overview-card h3 {
-      padding: 20px 0px 0px 0px;
-      text-align: center;
+      padding: 20px 0px 0px 0px !;
+      text-align: center !;
       font-size: 24px; font-weight: bold; width: 100%;
     }
     .overview-card p {
-      padding: 20px 0px 0px 0px;
+      padding: 20px 0px 0px 0px !important;
       text-align: center;
       font-size: 24px; font-weight: bold; width: 100%;
     }
