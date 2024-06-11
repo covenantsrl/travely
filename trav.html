@@ -88,8 +88,20 @@
       image-rendering: optimizeQuality;
       /* Try to force high-quality rendering */
     }
-
-    .hidden {
+    .overview-card {
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px;max-height: 300px; box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1)
+    }
+    .overview-card h3 {
+      padding: 20px 0px 0px 0px;
+      text-align: center;
+      font-size: 24px; font-weight: bold; width: 100%;
+    }
+    .overview-card p {
+      padding: 20px 0px 0px 0px;
+      text-align: center;
+      font-size: 24px; font-weight: bold; width: 100%;
+    }
+      .hidden {
       display: none;
     }
   </style>
@@ -268,43 +280,22 @@
                 srcset="https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8eef7e4ae2e81d92feb9_overview-mobile-p-500.webp 500w, https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8eef7e4ae2e81d92feb9_overview-mobile.webp 684w"
                 alt="" class="overview-image-mobile">
             </div>-->
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px; max-height: 300px;">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Galleria</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 30px 15px;
-            text-align: center; width: 100%;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">I luoghi del tuo viaggio, da conservare e
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Galleria</h3>
+              <p><span style="font-size:16px;color:gray">I luoghi del tuo viaggio, da conservare e
                   condividere</span></p>
               <img src="./files/gallery.webp" loading="lazy" alt="Gallery" style="border-radius: 20px;">
             </div>
             
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px;max-height: 300px;">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Mappa</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 30px 15px;
-            text-align: center;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Vedi i luoghi su mappa e segui le indicazioni</span></p>
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Mappa</h3>
+              <p><span style="font-size:16px;color:gray">Vedi i luoghi su mappa e segui le indicazioni</span></p>
               <img src="./files/map.jpeg" style="border-radius: 20px;" loading="lazy" alt="">
             </div>
 
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Itinerary tracker</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 20px 15px;
-            text-align: center; width: 100%;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Visually Organized, step by step, km fatti
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Itinerary tracker</h3>
+              <p><span style="font-size:16px;color:gray">Visually Organized, step by step, km fatti
                   ecc.</span></p>
               <img src="https://www.any.do/_next/static/media/feature-personal-subtasks.7ae04f79.webp" loading="lazy"
                 alt="">
