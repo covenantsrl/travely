@@ -88,18 +88,10 @@
       image-rendering: optimizeQuality;
       /* Try to force high-quality rendering */
     }
+    .hidden { display: none; }
+  </style>
   </style>
   <title>Travely - Travel itinerary management and tour building app</title>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang.includes('it')) {
-        window.location.href = 'trav.html';
-      } else {
-        window.location.href = 'trav-en.html';
-      }
-    });
-  </script>
   <meta content="Travely - Travel itinerary management and tour building app" name="description">
   <meta content="Travely - Travel itinerary management and tour building app" property="og:title">
   <meta content="Travely - Travel itinerary management and tour building app" property="og:description">
@@ -199,7 +191,9 @@
         <div data-w-id="653d6031-aa80-5f0c-561b-f7d572d05b1e" class="hero-wrapper"
           style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
           <img src="./files/icon.png" loading="lazy" width="102" alt="" class="hero-logo">
-          <h1>Plan your travels easily.<br><span class="blue-underline">All in one place.</span></h1>
+          <h1 class="eng">Plan your travels easily.<br><span class="blue-underline">All in one place.</span></h1>
+          <h1 class="ita">Pianifica il tuo viaggio facile.<br><span class="blue-underline">Tieni tutto in un posto.</span></h1>
+
           <p class="hero-description"><!--Travely è la super-app basata su AI per la pianificazione e gestione di itinerari
             di viaggi-->
             The AI-powered super-app for seamless travel planning, tour building and itinerary management.</p>
@@ -701,5 +695,14 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="./files/webflow.142103ecd.js" type="text/javascript"></script>
 </body>
-
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const userLang = navigator.language || navigator.userLanguage;
+    if (userLang.includes('it')) {
+      document.getElementById('ita').classList.remove('hidden');
+    } else {
+      document.getElementById('eng').classList.remove('hidden');
+    }
+  });
+</script>
 </html>
