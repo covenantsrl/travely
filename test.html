@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation</title>
+  <style>
+    body {
+      height: 200vh; /* To enable scrolling */
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .image-container {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .image {
+      position: absolute;
+      width: 100px;
+      transition: transform 0.5s, top 0.5s, left 0.5s;
+    }
+
+    /* Adjust these styles to match the exact positions from your video */
+    .image1 { top: 10%; left: 10%; }
+    .image2 { top: 20%; left: 40%; }
+    .image3 { top: 30%; left: 70%; }
+    .image4 { top: 40%; left: 20%; }
+    .image5 { top: 50%; left: 50%; }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="https://via.placeholder.com/100" alt="Image 1" class="image image1">
+    <img src="https://via.placeholder.com/100" alt="Image 2" class="image image2">
+    <img src="https://via.placeholder.com/100" alt="Image 3" class="image image3">
+    <img src="https://via.placeholder.com/100" alt="Image 4" class="image image4">
+    <img src="https://via.placeholder.com/100" alt="Image 5" class="image image5">
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = document.querySelectorAll('.image');
+      const container = document.querySelector('.image-container');
+      const containerHeight = container.offsetHeight;
+      
+      window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY;
+        const scrollFactor = scrollY / (document.body.offsetHeight - window.innerHeight);
+        
+        images.forEach((image, index) => {
+          const initialTop = parseFloat(image.style.top);
+          const initialLeft = parseFloat(image.style.left);
+          const newTop = 50 - (50 - initialTop) * (1 - scrollFactor);
+          const newLeft = 50 - (50 - initialLeft) * (1 - scrollFactor);
+          image.style.top = `${newTop}%`;
+          image.style.left = `${newLeft}%`;
+          image.style.transform = `translate(-${scrollFactor * 50}%, -${scrollFactor * 50}%)`;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
