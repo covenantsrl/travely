@@ -98,6 +98,7 @@
   grid-template-rows: auto auto auto; /* 3 rows: one for each element */
   grid-row-gap: 10px; /* General row gap */
   max-height: 300px;
+  border-radius: 52px;
   box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1);
 }
 
@@ -135,6 +136,9 @@
 .hero-wrapper .hero-description {
   font-size: 19px;
   line-height: 1.4;
+}
+.hero-wrapper h1 {
+  line-height: 1.2;
 }
   </style>
   </style>
@@ -186,7 +190,8 @@
             src="./files/logo_black_big.png" width="90" loading="lazy" alt="" class="app-logo"></a>
         <div class="nav-menu">
           <a href="/personal.html" class="nav-link">Personal</a>
-          <a  href="/agency.html" class="nav-link">Agency</a>
+          <a  href="/agency.html" class="nav-link content hidden" data-lang="en">Agency</a>
+          <a  href="/agency.html" class="nav-link content hidden" data-lang="it">Agenzie</a>
           <a href="#waitlist" target="_blank" class="button-secondary w-inline-block"><img
               src="./files/65bf8414ab3fd8f47c85e800_arrow-down-circle-1.svg" loading="lazy" alt="" class="button-arrow"
               style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -414,8 +419,20 @@
                 style="font-size: .9375rem;line-height: 1.359375rem;font-weight: 500;">AI</span>
             </div>
           </div>
-          <h2>Your Smart Travel Companion</h2>
-          <p class="features-description">
+          <h2 class="content hidden" data-lang="en">Your Smart Travel Companion</h2>
+          <h2 class="content hidden" data-lang="it">Il tuo compagno di viaggio smart</h2>
+          <p class="features-description content hidden" data-lang="en">
+            Save precious time and effort with your all-new AI assistant.<br>Whether you’re a solo backpacker or a
+            professional travel agent, our tool powered by artificial intelligence simplifies the planning, suggesting
+            and organizing of your trips.<br>
+            The main benefits of an AI-powerd itinerary management include a significantly reduced workload for travel
+            agents and frequent travellers, while individuals enjoy a less stressful and well-organized travel
+            experience based on:<br>
+          <h4>Where you’re planning to go</h4>
+          <h4>With whom you’re traveling</h4>
+          <h4>Your personal preferences</h4>
+          </p>
+          <p class="features-description content hidden" data-lang="it">
             Save precious time and effort with your all-new AI assistant.<br>Whether you’re a solo backpacker or a
             professional travel agent, our tool powered by artificial intelligence simplifies the planning, suggesting
             and organizing of your trips.<br>
