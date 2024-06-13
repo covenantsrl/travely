@@ -2458,7 +2458,7 @@ ul {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   background-color: var(--white--primary);
-  box-shadow: 0 1px 3px 0 var(--gray--secondary);
+  /*box-shadow: 0 1px 3px 0 var(--gray--secondary);*/
   border-radius: 30px;
   flex-direction: column;
   align-items: flex-start;
