@@ -98,6 +98,7 @@
   grid-template-rows: auto auto auto; /* 3 rows: one for each element */
   grid-row-gap: 10px; /* General row gap */
   max-height: 300px;
+  border-radius: 52px;
   box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1);
 }
 
@@ -106,6 +107,9 @@
   padding: 0; /* Removed padding */
   width: calc(100% - 45px); /* Adjusting width to fit within the card */
   margin: 0 auto; /* Centering the image */
+  border: 0px solid var(--gray--secondary);
+    box-shadow: 0 1px 3px 0 var(--gray--secondary), 0 0 0 14px #f7f7f7, 0 0 0 15px var(--gray--secondary);
+    border-radius: 34px;
 }
 
 .overview-card h3 {
@@ -126,9 +130,16 @@
   padding: 0 15px; /* Removed bottom padding */
   margin-bottom: 10px; /* Adding margin to separate from image */
 }
-      .hidden {
+  .hidden {
       display: none;
-    }
+}
+.hero-wrapper .hero-description {
+  font-size: 19px;
+  line-height: 1.4;
+}
+.hero-wrapper h1 {
+  line-height: 1.2;
+}
   </style>
   </style>
   <title>Travely - Travel itinerary management and tour building app</title>
@@ -179,8 +190,8 @@
             src="./files/logo_black_big.png" width="90" loading="lazy" alt="" class="app-logo"></a>
         <div class="nav-menu">
           <a href="/personal.html" class="nav-link">Personal</a>
-          <a href="/agency.html" class="nav-link">Agency</a>
-          <a href="/job.html" class="nav-link">Job</a>
+          <a  href="/agency.html" class="nav-link content hidden" data-lang="en">Agency</a>
+          <a  href="/agency.html" class="nav-link content hidden" data-lang="it">Agenzie</a>
           <a href="#waitlist" target="_blank" class="button-secondary w-inline-block"><img
               src="./files/65bf8414ab3fd8f47c85e800_arrow-down-circle-1.svg" loading="lazy" alt="" class="button-arrow"
               style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -234,7 +245,7 @@
           <h1 class="content hidden" data-lang="en">Plan your travels easily.<br><span class="blue-underline">All in one
               place.</span></h1>
           <h1 class="content hidden" data-lang="it">Viaggia senza pensieri.<br><span
-              class="blue-underline">Gestisci tutto a portata di mano.</span></h1>
+              class="blue-underline">Tieni tutto a portata di mano.</span></h1>
 
           <p class="content hidden hero-description" data-lang="en">
             The AI-powered super-app for seamless travel planning, tour building and itinerary management.</p>
@@ -258,23 +269,24 @@
           <div class="video-overlay">
             <video class="gallery-image" src="./files/new_cro.mp4" autoplay loop muted></video>
           </div>
-          <img src="./files/65e6d4e6aea690ee1851b0b8_app.webp" loading="lazy"
+          <img src="./files/home.png" loading="lazy"
             sizes="(max-width: 479px) 87vw, (max-width: 767px) 320px, (max-width: 991px) 32vw, 31vw" alt=""
             id="w-node-a6cc5305-9daf-8f6d-8819-a57e73ee4cf9-8e01a7e0"
-            srcset="https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65e6d4e6aea690ee1851b0b8_app-p-500.webp 500w, https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65e6d4e6aea690ee1851b0b8_app.webp 738w"
+            srcset="./files/home.pngp 500w, ./files/home.png 738w"
             class="gallery-image"
-            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"><img
-            src="./files/65bf8a90a1b156aad4fa19ff_Mockup-2.webp" loading="lazy"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            <img
+            src="./files/cover.png" loading="lazy"
             sizes="(max-width: 479px) 87vw, (max-width: 767px) 320px, (max-width: 991px) 28vw, 27vw" alt=""
             id="w-node-_70428380-a9ac-b15f-2fef-8e3638baa98a-8e01a7e0"
-            srcset="https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8a90a1b156aad4fa19ff_Mockup-2-p-500.webp 500w, https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8a90a1b156aad4fa19ff_Mockup-2.webp 640w"
+            srcset="./files/cover.png 500w, ./files/cover.png 640w"
             class="gallery-image"
             style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
         </div>
       </div>
     </section>
 
-    <section class="section overview-section">
+    <section class="section overview-section" style="text-align: center;">
       <div class="container">
         <div class="overview-wrapper">
           <div class="overview-top"
@@ -305,121 +317,78 @@
                 srcset="https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8eef7e4ae2e81d92feb9_overview-mobile-p-500.webp 500w, https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8eef7e4ae2e81d92feb9_overview-mobile.webp 684w"
                 alt="" class="overview-image-mobile">
             </div>-->
+
+           
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Itinerario</h3>
+              <p><span style="font-size:16px;color:gray">Tutte le attività da fare, organizzate giorno per giorno<!--Visually Organized, step by step, km fatti
+                  ecc.--></span></p>
+              <img src="./files/itin.png" loading="lazy" alt="">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Documenti</h3>
+              <p><span style="font-size:16px;color:gray">Biglietto volo, prenotazioni hotel, musei, copia passaporto,ecc.
+              </span></p>
+              <img src="./files/doc.png" loading="lazy"
+                alt="">
+            </div>
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Mappa</h3>
+              <p><span style="font-size:16px;color:gray">Tutte la tappe da visitare e come arrivarci</span></p>
+              <img src="./files/map.jpeg" loading="lazy" alt="">
+            </div>
+
             <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
               <h3 class="heading-medium">Foto</h3>
               <p><span style="font-size:16px;color:gray">I luoghi del tuo viaggio, da conservare e
                   condividere</span></p>
               <img src="./files/gallery.webp" loading="lazy" alt="Gallery">
             </div>
-            
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
-              <h3 class="heading-medium">Mappa</h3>
-              <p><span style="font-size:16px;color:gray">Vedi i luoghi su mappa e segui le indicazioni</span></p>
-              <img src="./files/map.jpeg" loading="lazy" alt="">
-            </div>
 
             <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
-              <h3 class="heading-medium">Itinerario</h3>
-              <p><span style="font-size:16px;color:gray">Le tappe organizzate e ottimizzate giorno per giorno<!--Visually Organized, step by step, km fatti
-                  ecc.--></span></p>
-              <img src="./files/itin.png" loading="lazy" alt="">
-            </div>
-
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Meteo</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 20px 15px;
-            text-align: center; width: 100%;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Della detinazio eohdoahjdoa</span></p>
-              <img src="https://www.any.do/_next/static/media/feature-personal-subtasks.7ae04f79.webp" loading="lazy"
+              <h3 class="heading-medium">Meteo</h3>
+              <p><span style="font-size:16px;color:gray">Avvisi e previsioni meteo, prima e durante il viaggio</span></p>
+              <img src="./files/meteo.webp" loading="lazy"
                 alt="">
             </div>
 
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Documenti</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 20px 15px;
-            text-align: center; width: 100%;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Prenotazioni aereo, hotel, museo, passaporto,
-                  d</span></p>
-              <img src="https://www.any.do/_next/static/media/feature-personal-subtasks.7ae04f79.webp" loading="lazy"
+              <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Cose da portare</h3>
+              <p><span style="font-size:16px;color:gray">Checklist valigia in base alla destinazione del viaggio</span></p>
+              <img src="./files/checklist.png" loading="lazy"
                 alt="">
             </div>
 
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Cose da portare</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 20px 15px;
-            text-align: center; width: 100%;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Cosa mettere in valigia per la destinazione
-                  scelta</span></p>
-              <img src="https://www.any.do/_next/static/media/feature-personal-subtasks.7ae04f79.webp" loading="lazy"
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Notifiche volo</h3>
+              <p><span style="font-size:16px;color:gray">Avvisi inerenti i voli aggiunti nel viaggio</span></p>
+              <img src="./files/flight.png" loading="lazy"
                 alt="">
             </div>
 
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Notifiche volo</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 20px 15px;
-            text-align: center; width: 100%;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Cosa mettere in valigia per la destinazione
-                  scelta</span></p>
-              <img src="https://www.any.do/_next/static/media/feature-personal-subtasks.7ae04f79.webp" loading="lazy"
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Appunti di viaggio</h3>
+              <p><span style="font-size:16px;color:gray">Note personali, cose da ricordare o appuntarsi durante il viaggio</span></p>
+              <img src="./files/note.jpeg" loading="lazy"
                 alt="">
             </div>
 
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Appunti di viaggio</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 20px 15px;
-            text-align: center; width: 100%;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Cosa mettere in valigia per la destinazione
-                  scelta</span></p>
-              <img src="https://www.any.do/_next/static/media/feature-personal-subtasks.7ae04f79.webp" loading="lazy"
-                alt="">
-            </div>
-
-
-            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card"
-              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1; overflow: hidden; padding: 0; grid-row-gap:0px">
-              <h3 class="heading-medium" style="padding: 20px 0px 0px 0px;
-            text-align: center;
-            font-size: 24px; font-weight: bold; width: 100%;">Contatti</h3>
-              <p style="font-size: 14px;
-            padding: 5px 15px 20px 15px;
-            text-align: center;
-            font-weight: 500;
-            line-height: 1.4;"><span style="font-size:16px;color:gray">Persone con cui hai condiviso viaggio</span></p>
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Contatti</h3>
+              <p><span style="font-size:16px;color:gray">Rimani in contatto con le persone con cui hai condiviso viaggio</span></p>
               <img src="https://www.any.do/_next/static/media/feature-family-organize.05a90416.webp" loading="lazy"
                 alt="">
             </div>
           </div>
         </div>
       </div>
-  </div>
-  </div>
-  </div>
-  </div>
+      <h4 class="content hidden" data-lang="it" style="margin-top: 50px;">e tanti altri ancora...</h4>
+      <h4 class="content hidden" data-lang="en" style="margin-top: 50px;">and many more to explore...</h4>
+    
+    </section>
+
+
   </section>
   <section class="section features-white">
     <div class="container">
@@ -451,8 +420,20 @@
                 style="font-size: .9375rem;line-height: 1.359375rem;font-weight: 500;">AI</span>
             </div>
           </div>
-          <h2>Your Smart Travel Companion</h2>
-          <p class="features-description">
+          <h2 class="content hidden" data-lang="en">Your Smart Travel Companion</h2>
+          <h2 class="content hidden" data-lang="it">Il tuo compagno di viaggio smart</h2>
+          <p class="features-description content hidden" data-lang="en">
+            Save precious time and effort with your all-new AI assistant.<br>Whether you’re a solo backpacker or a
+            professional travel agent, our tool powered by artificial intelligence simplifies the planning, suggesting
+            and organizing of your trips.<br>
+            The main benefits of an AI-powerd itinerary management include a significantly reduced workload for travel
+            agents and frequent travellers, while individuals enjoy a less stressful and well-organized travel
+            experience based on:<br>
+          <h4>Where you’re planning to go</h4>
+          <h4>With whom you’re traveling</h4>
+          <h4>Your personal preferences</h4>
+          </p>
+          <p class="features-description content hidden" data-lang="it">
             Save precious time and effort with your all-new AI assistant.<br>Whether you’re a solo backpacker or a
             professional travel agent, our tool powered by artificial intelligence simplifies the planning, suggesting
             and organizing of your trips.<br>
@@ -586,11 +567,16 @@ display: flex;"><svg color="rgba(246 176 60 / 100%)" width="20" height="20" xmln
     <div class="container">
       <div class="cta-wrapper"
         style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-        <h1>We're launching soon</h1>
-        <p class="hero-description">
+        <h1 class="content hidden" data-lang="en">We're launching soon</h1>
+        <h1 class="content hidden" data-lang="it">Stiamo arrivando</h1>
+
+        <p class="content hidden hero-description" data-lang="en">
           While our solution is still being developed, we’re confident that it will help people enjoy more fulfilling
           and
           enjoyable travel experiences. In the meantime, make sure to sign up for our waitlist for future updates!
+        </p>
+        <p class="content hidden hero-description" data-lang="it">
+          Attualmente in fase di beta testing, lavoriamo il più possibile per migliorare le esperienze di viaggio. Nel frattempo, iscriviti alla nostra lista d'attesa per ricevere aggiornamenti futuri!
         </p>
         <div class="framer-qjlo3v-container">
           <div class="framer-6YQAR framer-1e8mxh7 framer-v-1e8mxh7" data-framer-name="Variant 1" tabindex="0"
@@ -882,7 +868,8 @@ display: flex;"><svg color="rgba(246 176 60 / 100%)" width="20" height="20" xmln
           <a href="https://thrive-template.webflow.io/" aria-current="page" class="w-inline-block w--current"><img
               src="./files/logo_black_big.png" width="90" loading="lazy" alt="" class="app-logo"></a>
           <div class="footer-menu"><a href="https://thrive-template.webflow.io/help" class="footer-link">Personal</a><a
-              href="https://thrive-template.webflow.io/changelog" class="footer-link">Agency</a></div>
+              href="https://thrive-template.webflow.io/changelog" class="footer-link">Agency</a><a href="/job.html" class="nav-link">Jobs</a>
+            </div>
         </div>
       </div>
     </div>
