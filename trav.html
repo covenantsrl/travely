@@ -955,6 +955,22 @@
       grid-column-gap: 90px;
     }
 
+    /*hero mob*/
+    .grid-flow-row {
+      grid-auto-flow: row;
+    }
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .gap-5 {gap:0.75rem;}
+   
+    @media (min-width: 1024px) {
+      .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .gap-5 {gap:1.25rem;}
+    }
+
   </style>
   <title>Travely - Travel itinerary management and tour building app</title>
   <meta content="Travely - Travel itinerary management and tour building app" name="description">
@@ -1080,10 +1096,10 @@
     </section>
     <section class="section">
       <div class="container-large">
-        <div class="gallery-wrapper2">
+        <div class="gallery-wrapper2 relative grid grid-cols-1 gap-3 grid-cols-3 gap-5">
 
 
-          <div class="luc">
+          <div class="luc relative grid grid-flow-row gap-3 gap-5">
             <div class="lucc">
               <div class="flex justify-center">
                 <h3
@@ -1095,7 +1111,7 @@
               </div>
               <div class="tit" style="padding:0px 30px">
                 <div>
-                  <img align="bottom"
+                  <img 
                     alt="Mobile app screenshot showing the discover community feature through which the user can discover and join new communities"
                     loading="lazy" width="762" height="1400" decoding="async" data-nimg="1"
                     class="rounded-[20px] border-4 border-[var(--screen-border,#EAEEF1)] bg-[var(--screen-border,#EAEEF1)] md:rounded-[24px] overflow-hidden !rounded-b-none border-b-0"
@@ -1106,7 +1122,7 @@
             </div>
           </div>
           
-          <div class="luc">
+          <div class="luc relative grid grid-flow-row gap-3 gap-5">
             <div class="a">
               <div class="flex justify-center">
                 <h3 style="padding-top:0; font-size: 1.4875rem;"
@@ -1150,7 +1166,7 @@
             </div>
           </div>
           
-          <div class="luc">
+          <div class="luc relative grid grid-flow-row gap-3 gap-5">
             <div class="lucc-v" style="padding: 0px 25px;">
               <div class="max-w-[310px] sm:max-w-[264px] lg:max-w-[280px] 2xl:max-w-[384px]">
                 <div class="video-cont">
