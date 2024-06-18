@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html data-wf-domain="travely" data-wf-page="65bf7d3d6bb1c09b8e01a7e0" data-wf-site="65bf7d3d6bb1c09b8e01a7d0"
+  class="w-mod-js w-mod-ix wf-inter-n7-active wf-inter-n5-active wf-inter-n6-active wf-inter-n4-active wf-active">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wf-force-outline-none[tabindex="-1"]:focus {
+      outline: none;
+    }
+
+    .w-webflow-badge {
+      display: none !important;
+    }
+
+    .video-overlay video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 479px) {
+      .phone-container {
+        width: 87vw;
+      }
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      .phone-container {
+        width: 320px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .phone-container {
+        width: 32vw;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .phone-container {
+        width: 31vw;
+      }
+    }
+
+    .blue-underline:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      bottom: 0;
+      background: url(https://www.any.do/v5/images/home/blue-underline.svg) no-repeat 0 0;
+      background-size: 100% auto;
+    }
+
+    .hero-wrapper h1 span {
+      position: relative;
+      line-height: 1.1;
+      padding-bottom: 10px;
+    }
+
+    .hero-wrapper p {
+      padding-top: 15px;
+      ;
+    }
+
+    .overview-top {
+      max-width: 480px;
+    }
+
+    video {
+      filter: none;
+      background: none;
+      display: block;
+      width: 100%;
+      /* Adjust as needed */
+      height: auto;
+      /* Adjust as needed */
+      image-rendering: optimizeQuality;
+      /* Try to force high-quality rendering */
+    }
+
+    .overview-card {
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 1;
+      overflow: hidden;
+      padding: 0 !important;
+      display: grid;
+      grid-template-rows: auto auto auto;
+      /* 3 rows: one for each element */
+      grid-row-gap: 10px;
+      /* General row gap */
+      max-height: 325px;
+      border-radius: 52px;
+      box-shadow: 0 3px 72px 0 rgba(0, 0, 0, .1);
+    }
+
+    .overview-card img {
+      border-radius: 20px 20px 0px 0px !important;
+      ;
+      /* Adjusted from 50px to 20px */
+      padding: 0;
+      /* Removed padding */
+      width: calc(100% - 45px);
+      /* Adjusting width to fit within the card */
+      margin: 0 auto;
+      /* Centering the image */
+      border: 0px solid var(--gray--secondary);
+      box-shadow: 0 1px 3px 0 var(--gray--secondary), 0 0 0 14px #f7f7f7, 0 0 0 15px var(--gray--secondary);
+      border-radius: 34px;
+    }
+
+    .overview-card h3 {
+      padding: 20px 0 0 0 !important;
+      /* Top padding to separate from top of card */
+      text-align: center !important;
+      font-size: 24px;
+      font-weight: bold;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .overview-card p {
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+      margin-top: -5px;
+      font-weight: 500;
+      line-height: 1.4;
+      padding: 0 15px;
+      /* Removed bottom padding */
+      margin-bottom: 20px;
+      /* Adding margin to separate from image */
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .hero-wrapper .hero-description {
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+    .hero-wrapper h1 {
+      line-height: 1.2;
+    }
+
+    .features-description h4 {
+      margin: 10px 0px;
+    }
+
+    #waitlist {
+      /*background: url(https://framerusercontent.com/images/B37nn5tOLh6dZBuFut8HkqylhDQ.png);*/
+      background: url(https://assets-global.website-files.com/6544a331d4f63b5b4c8cfa4f/654ceda5362fc31b3855a77d_home-hero.webp);
+      background-position: bottom;
+      background-size: cover;
+    }
+
+    .gallery-wrapper2 {
+      
+     
+    margin: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 1.25rem;
+    }
+
+    .luc {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      border: 0 solid;
+      box-sizing: border-box;
+      margin: 0;
+      position: relative;
+      z-index: 14;
+      display: grid;
+      grid-auto-flow: row;
+      gap: 1.25rem;
+    }
+
+    .lucc {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent; 
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      border: 0 solid;
+      box-sizing: border-box;
+      margin: 0;
+      position: relative;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: flex-end;
+      border-width: 1px;
+      border-color: rgba(27, 39, 61, .1);
+      background-color: hsla(0, 0%, 100%, .4);
+      border-radius: 32px;
+    }
+
+    .lucc img {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+      
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      
+      width: 762px;
+      aspect-ratio: auto 762 / 1400;
+      border: 0 solid;
+      
+      box-sizing: border-box;
+      margin: 0;
+      vertical-align: middle;
+      height: auto;
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+      border-bottom-right-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      border-width: 4px;
+      border-bottom-width: 0;
+      border-color: var(--screen-border, #eaeef1);
+      background-color: var(--screen-border, #eaeef1);
+      border-radius: 24px;
+      color: transparent;
+      user-select: none;
+    }
+
+    .lucc h3 {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      -webkit-font-smoothing: antialiased;
+      border: 0 solid;
+      box-sizing: border-box;
+      margin: 0;
+      overflow-wrap: break-word;
+      width: 100%;
+      padding: 1.5rem;
+      text-align: center;
+      font-weight: 600;
+      max-width: 410px;
+      font-size: 1.6875rem;
+      line-height: 2rem;
+      letter-spacing: -.0354375rem;
+    }
+
+    .lucc .tit {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+      
+      
+      --size-1: 0px;
+      --size-5: 20px;
+      --size-7: 28px;
+      --size-9: 36px;
+      --size-11: 44px;
+      --size-14: 52px;
+      --size-15: 64px;
+      --size-16: 74px;
+      --size-17: 84px;
+      --size-18: 94px;
+      --size-19: 104px;
+      --size-20: 124px;
+      --size-21: 144px;
+      --size-22: 164px;
+      --size-23: 184px;
+      --size-24: 204px;
+      --size-25: 224px;
+      --size-26: 224px;
+      --size-27: 244px;
+      --size-28: 264px;
+      --size-29: 284px;
+      --size-2: 2px;
+      --size-3: 4px;
+      --size-4: 8px;
+      --size-6: 24px;
+      --size-8: 32px;
+      --size-10: 40px;
+      --size-12: 44px;
+      --size-13: 48px;
+      --space-1: 0px;
+      --space-5: 2px;
+      --space-7: 7px;
+      --space-9: 13px;
+      --space-11: 18px;
+      --space-14: 24px;
+      --space-15: 32px;
+      --space-16: 39px;
+      --space-17: 46px;
+      --space-18: 53px;
+      --space-19: 60px;
+      --space-20: 74px;
+      --space-21: 88px;
+      --space-22: 102px;
+      --space-23: 116px;
+      --space-24: 130px;
+      --space-25: 144px;
+      --space-26: 144px;
+      --space-27: 158px;
+      --space-28: 172px;
+      --space-29: 186px;
+      --space-2: 0.5px;
+      --space-3: 1px;
+      --space-4: 1.5px;
+      --space-6: 4px;
+      --space-8: 10px;
+      --space-10: 16px;
+      --space-12: 18px;
+      --space-13: 21px;
+      --space-30: -0.5px;
+      --space-31: -1px;
+      --space-32: -1.5px;
+      --space-33: -2px;
+      --space-34: -4px;
+      --space-35: -7px;
+      --space-36: -10px;
+      --space-37: -13px;
+      --space-38: -16px;
+      --space-39: -18px;
+      --space-40: -18px;
+      --space-41: -21px;
+      --space-42: -24px;
+      --space-43: -32px;
+      --space-44: -39px;
+      --space-45: -46px;
+      --space-46: -53px;
+      --space-47: -60px;
+      --space-48: -74px;
+      --space-49: -88px;
+      --space-50: -102px;
+      --space-51: -116px;
+      --space-52: -130px;
+      --space-53: -144px;
+      --space-54: -144px;
+      --space-55: -158px;
+      --space-56: -172px;
+      --space-57: -186px;
+      --zIndex-1: 0;
+      --zIndex-2: 100;
+      --zIndex-3: 200;
+      --zIndex-4: 300;
+      --zIndex-5: 400;
+      --zIndex-6: 500;
+      --radius-1: 0px;
+      --radius-2: 4px;
+      --radius-3: 6px;
+      --radius-4: 8px;
+      --radius-5: 10px;
+      --radius-6: 12px;
+      --radius-7: 16px;
+      --radius-8: 20px;
+      --radius-9: 1000px;
+      --font-inter: '__Inter_469f07', '__Inter_Fallback_469f07';
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      --background: var(--color-202);
+      --textPrimary: var(--color-125);
+      --primary: var(--color-15);
+      --primaryHover: var(--color-16);
+      --success: var(--color-186);
+      --successHover: var(--color-187);
+      --danger: var(--color-99);
+      --dangerHover: var(--color-100);
+      --purple: var(--color-57);
+      --purpleHover: var(--color-58);
+      --army: var(--color-8);
+      --armyHover: var(--color-9);
+      --turquoise: var(--color-71);
+      --turquoiseHover: var(--color-72);
+      --blue: var(--color-15);
+      --blueHover: var(--color-16);
+      --yellow: var(--color-85);
+      --yellowHover: var(--color-86);
+      --orange: var(--color-43);
+      --orangeHover: var(--color-44);
+      --pink: var(--color-50);
+      --pinkHover: var(--color-51);
+      --copper: var(--color-29);
+      --copperHover: var(--color-29);
+      --camel: var(--color-22);
+      --camelHover: var(--color-22);
+      --placeHolderColor: var(--color-118);
+      --placeHolderColorBlurred: var(--color-130);
+      --iconButtonBackground: var(--color-115);
+      --iconButtonBackgroundHover: var(--color-116);
+      --iconButtonBackgroundSelected: var(--color-116);
+      --iconButtonBorderSelected: var(--color-117);
+      --iconButtonBackgroundBlurred: var(--color-131);
+      --iconButtonBackgroundBlurredHover: var(--color-127);
+      --iconButtonBackgroundBlurredSelected: var(--color-127);
+      --iconButtonBorderBlurredSelected: var(--color-131);
+      --iconButtonOutlineBackgroundSelected: var(--color-115);
+      --iconButtonOutlineBorder: var(--color-116);
+      --iconButtonOutlineBorderHover: var(--color-117);
+      --iconButtonOutlineBorderSelected: var(--color-116);
+      --iconButtonOutBackgroundBlurredSelected: var(--color-115);
+      --iconButtonOutlineBorderBlurred: var(--color-127);
+      --iconButtonOutlineBorderBlurredHover: var(--color-128);
+      --iconButtonOutlineBorderBlurredSelected: var(--color-127);
+      --iconButtonColor: var(--color-119);
+      --iconButtonColorSelected: var(--color-125);
+      --iconButtonColorBlurred: var(--color-125);
+      --iconButtonColorOutline: var(--color-119);
+      --iconButtonColorOutlineSelected: var(--color-125);
+      --iconButtonColorOutlineBlurred: var(--color-134);
+      --blurBackground: var(--color-7);
+      --screen-background: rgba(42 121 155 / 10%);
+      --screen-background-border: rgba(42 121 155 / 20%);
+      --screen-border: rgba(42 121 155 / 5%);
+      --circle-background: rgba(42 121 155 / 100%);
+      border: 0 solid;
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgba(59, 130, 246, .5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      box-sizing: border-box;
+      margin: 0;
+      z-index: 10;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-top: .5rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    .lucc-v {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+      
+      
+      --size-1: 0px;
+      --size-5: 20px;
+      --size-7: 28px;
+      --size-9: 36px;
+      --size-11: 44px;
+      --size-14: 52px;
+      --size-15: 64px;
+      --size-16: 74px;
+      --size-17: 84px;
+      --size-18: 94px;
+      --size-19: 104px;
+      --size-20: 124px;
+      --size-21: 144px;
+      --size-22: 164px;
+      --size-23: 184px;
+      --size-24: 204px;
+      --size-25: 224px;
+      --size-26: 224px;
+      --size-27: 244px;
+      --size-28: 264px;
+      --size-29: 284px;
+      --size-2: 2px;
+      --size-3: 4px;
+      --size-4: 8px;
+      --size-6: 24px;
+      --size-8: 32px;
+      --size-10: 40px;
+      --size-12: 44px;
+      --size-13: 48px;
+      --space-1: 0px;
+      --space-5: 2px;
+      --space-7: 7px;
+      --space-9: 13px;
+      --space-11: 18px;
+      --space-14: 24px;
+      --space-15: 32px;
+      --space-16: 39px;
+      --space-17: 46px;
+      --space-18: 53px;
+      --space-19: 60px;
+      --space-20: 74px;
+      --space-21: 88px;
+      --space-22: 102px;
+      --space-23: 116px;
+      --space-24: 130px;
+      --space-25: 144px;
+      --space-26: 144px;
+      --space-27: 158px;
+      --space-28: 172px;
+      --space-29: 186px;
+      --space-2: 0.5px;
+      --space-3: 1px;
+      --space-4: 1.5px;
+      --space-6: 4px;
+      --space-8: 10px;
+      --space-10: 16px;
+      --space-12: 18px;
+      --space-13: 21px;
+      --space-30: -0.5px;
+      --space-31: -1px;
+      --space-32: -1.5px;
+      --space-33: -2px;
+      --space-34: -4px;
+      --space-35: -7px;
+      --space-36: -10px;
+      --space-37: -13px;
+      --space-38: -16px;
+      --space-39: -18px;
+      --space-40: -18px;
+      --space-41: -21px;
+      --space-42: -24px;
+      --space-43: -32px;
+      --space-44: -39px;
+      --space-45: -46px;
+      --space-46: -53px;
+      --space-47: -60px;
+      --space-48: -74px;
+      --space-49: -88px;
+      --space-50: -102px;
+      --space-51: -116px;
+      --space-52: -130px;
+      --space-53: -144px;
+      --space-54: -144px;
+      --space-55: -158px;
+      --space-56: -172px;
+      --space-57: -186px;
+      --zIndex-1: 0;
+      --zIndex-2: 100;
+      --zIndex-3: 200;
+      --zIndex-4: 300;
+      --zIndex-5: 400;
+      --zIndex-6: 500;
+      --radius-1: 0px;
+      --radius-2: 4px;
+      --radius-3: 6px;
+      --radius-4: 8px;
+      --radius-5: 10px;
+      --radius-6: 12px;
+      --radius-7: 16px;
+      --radius-8: 20px;
+      --radius-9: 1000px;
+      --font-inter: '__Inter_469f07', '__Inter_Fallback_469f07';
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      --background: var(--color-202);
+      --textPrimary: var(--color-125);
+      --primary: var(--color-15);
+      --primaryHover: var(--color-16);
+      --success: var(--color-186);
+      --successHover: var(--color-187);
+      --danger: var(--color-99);
+      --dangerHover: var(--color-100);
+      --purple: var(--color-57);
+      --purpleHover: var(--color-58);
+      --army: var(--color-8);
+      --armyHover: var(--color-9);
+      --turquoise: var(--color-71);
+      --turquoiseHover: var(--color-72);
+      --blue: var(--color-15);
+      --blueHover: var(--color-16);
+      --yellow: var(--color-85);
+      --yellowHover: var(--color-86);
+      --orange: var(--color-43);
+      --orangeHover: var(--color-44);
+      --pink: var(--color-50);
+      --pinkHover: var(--color-51);
+      --copper: var(--color-29);
+      --copperHover: var(--color-29);
+      --camel: var(--color-22);
+      --camelHover: var(--color-22);
+      --placeHolderColor: var(--color-118);
+      --placeHolderColorBlurred: var(--color-130);
+      --iconButtonBackground: var(--color-115);
+      --iconButtonBackgroundHover: var(--color-116);
+      --iconButtonBackgroundSelected: var(--color-116);
+      --iconButtonBorderSelected: var(--color-117);
+      --iconButtonBackgroundBlurred: var(--color-131);
+      --iconButtonBackgroundBlurredHover: var(--color-127);
+      --iconButtonBackgroundBlurredSelected: var(--color-127);
+      --iconButtonBorderBlurredSelected: var(--color-131);
+      --iconButtonOutlineBackgroundSelected: var(--color-115);
+      --iconButtonOutlineBorder: var(--color-116);
+      --iconButtonOutlineBorderHover: var(--color-117);
+      --iconButtonOutlineBorderSelected: var(--color-116);
+      --iconButtonOutBackgroundBlurredSelected: var(--color-115);
+      --iconButtonOutlineBorderBlurred: var(--color-127);
+      --iconButtonOutlineBorderBlurredHover: var(--color-128);
+      --iconButtonOutlineBorderBlurredSelected: var(--color-127);
+      --iconButtonColor: var(--color-119);
+      --iconButtonColorSelected: var(--color-125);
+      --iconButtonColorBlurred: var(--color-125);
+      --iconButtonColorOutline: var(--color-119);
+      --iconButtonColorOutlineSelected: var(--color-125);
+      --iconButtonColorOutlineBlurred: var(--color-134);
+      --blurBackground: var(--color-7);
+      --screen-background: rgba(42 121 155 / 10%);
+      --screen-background-border: rgba(42 121 155 / 20%);
+      --screen-border: rgba(42 121 155 / 5%);
+      --circle-background: rgba(42 121 155 / 100%);
+      border: 0 solid;
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position: ;
+      --tw-gradient-via-position: ;
+      --tw-gradient-to-position: ;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgba(59, 130, 246, .5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia: ;
+      box-sizing: border-box;
+      margin: 0;
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border-radius: 32px;
+      background-color: var(--screen-background);
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .lucc-v img {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+      
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      
+      width: 1663px;
+      aspect-ratio: auto 1663 / 2557;
+      border: 0 solid;
+      
+      box-sizing: border-box;
+      margin: 0;
+      vertical-align: middle;
+      height: auto;
+      display: block;
+      max-width: 100%;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      color: transparent;
+      user-select: none;
+    }
+
+    .video-cont {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+      
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      
+      border: 0 solid;
+      
+      box-sizing: border-box;
+      margin: 0;
+      overflow: hidden;
+      border-width: 4px;
+      border-color: var(--screen-border, #eaeef1);
+      background-color: var(--screen-border, #eaeef1);
+      border-radius: 24px;
+    }
+
+    .video-cont video {
+      tab-size: 4;
+      font-feature-settings: normal;
+      font-variation-settings: normal;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: 100%;
+      scrollbar-color: #e7eaee transparent;
+     
+      font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      
+      width: 750px;
+      border: 0 solid;
+     
+      box-sizing: border-box;
+      margin: 0;
+      vertical-align: middle;
+      height: auto;
+      display: block;
+      max-width: 100%;
+      --tw-scale-x: 1.02;
+      --tw-scale-y: 1.02;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      aspect-ratio: 0.46;
+      clip-path: inset(2px 2px);
+    }
+    .a {
+      tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: #e7eaee transparent;
+    
+    font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   
+    border: 0 solid;
+   
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-width: 1px;
+    border-color: rgba(27,39,61,.1);
+    background-color: hsla(0,0%,100%,.4);
+    border-radius: 32px;
+    }
+    .b {
+      tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: #e7eaee transparent;
+  
+    font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    
+    border: 0 solid;
+    
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    border-width: 1px;
+    border-color: rgba(27,39,61,.1);
+    background-color: hsla(0,0%,100%,.4);
+    border-radius: 32px;
+    }
+    .a h3, .b h3 {
+      tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: #e7eaee transparent;
+  
+    font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    
+    border: 0 solid;
+    
+    box-sizing: border-box;
+    margin: 0;
+    overflow-wrap: break-word;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    max-width: 410px;
+    font-size: 1.6875rem;
+    line-height: 2rem;
+    letter-spacing: -.0354375rem;
+    }
+    .a img, .b img {
+      tab-size: 4;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-color: #e7eaee transparent;
+  
+    font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    width: 668px;
+    aspect-ratio: auto 668 / 560;
+    border: 0 solid;
+    
+
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: middle;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+    border-width: 4px;
+    border-top-width: 0;
+    border-color: var(--screen-border,#eaeef1);
+    background-color: var(--screen-border,#eaeef1);
+    border-radius: 24px;
+    color: transparent;
+    user-select: none;
+    }
+    .features-wrapper {
+      grid-column-gap: 90px;
+    }
+
+  </style>
+  <title>Travely - Travel itinerary management and tour building app</title>
+  <meta content="Travely - Travel itinerary management and tour building app" name="description">
+  <meta content="Travely - Travel itinerary management and tour building app" property="og:title">
+  <meta content="Travely - Travel itinerary management and tour building app" property="og:description">
+  <meta content="Travely - Travel itinerary management and tour building app" property="twitter:title">
+  <meta content="Travely - Travel itinerary management and tour building app" property="twitter:description">
+  <meta content="https://files-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65e0fbbcfa5854c4ee1c412e_Opengraph.png"
+    property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="./files/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous">
+  <script src="./files/webfont.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="./files/css" media="all">
+  <script type="text/javascript">WebFont.load({ google: { families: ["Inter:regular,500,600,700"] } });</script>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+  <link rel="apple-touch-icon" sizes="57x57" href="./files/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./files/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./files/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./files/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./files/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./files/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./files/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./files/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./files/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./files/favicon/android-icon-192x192.png?">
+  <link rel="icon" type="image/png" sizes="32x32" href="./files/favicon/favicon-32x32.png?">
+  <link rel="icon" type="image/png" sizes="96x96" href="./files/favicon/favicon-96x96.png?">
+  <link rel="icon" type="image/png" sizes="16x16" href="./files/favicon/favicon-16x16.png?">
+  <link rel="manifest" href="./files/favicon/manifest.json?">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./files/favicon/ms-icon-144x144.png">
+  <link rel="icon" href="./files/favicon/favicon.ico" />
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <nav data-w-id="398f822d-d7ae-bf3b-539b-fdeedbd81689" class="navigation"
+      style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+      <div class="nav-wrapper"> <a href="/" aria-current="page" class="w-inline-block w--current">
+        <img src="./files/logo_black_big.svg" alt="Travely logo" width="90">
+        </a>
+        <div class="nav-menu">
+          <a href="/agency.html" class="nav-link content hidden" data-lang="en">Agency version</a>
+          <a href="/agency.html" class="nav-link content hidden" data-lang="it">Per agenzie</a>
+          <a href="#waitlist" target="_blank" class="button-secondary w-inline-block"><img
+              src="./files/65bf8414ab3fd8f47c85e800_arrow-down-circle-1.svg" loading="lazy" alt="" class="button-arrow"
+              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <div>Join us</div>
+          </a>
+        </div>
+        <div class="nav-burger">
+          <div data-is-ix2-target="1" class="nav-lottie" data-w-id="398f822d-d7ae-bf3b-539b-fdeedbd81697"
+            data-animation-type="lottie"
+            data-src="https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf98d3d599ba7badd96611_lottieflow-menu-nav-09-000000-easey.json"
+            data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.5"
+            data-duration="0"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 850 850" width="850" height="850" preserveAspectRatio="xMidYMid meet"
+              style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+              <defs>
+                <clippath id="__lottie_element_2">
+                  <rect width="850" height="850" x="0" y="0"></rect>
+                </clippath>
+              </defs>
+              <g clip-path="url(#__lottie_element_2)">
+                <g transform="matrix(1,0,0,1,425,425)" opacity="1" style="display: block;">
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(0,0,0)"
+                      stroke-opacity="1" stroke-width="60"
+                      d=" M324,-250 C324,-250 3,-250 3,-250 C3,-250 -324,-250 -324,-250"></path>
+                  </g>
+                </g>
+                <g transform="matrix(1,0,0,1,425,425)" opacity="1" style="display: block;">
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(0,0,0)"
+                      stroke-opacity="1" stroke-width="60" d=" M-324,250 C-324,250 3,250 3,250 C3,250 324,250 324,250">
+                    </path>
+                  </g>
+                </g>
+                <g transform="matrix(1,0,0,1,425,425)" opacity="1" style="display: block;">
+                  <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                    <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10"
+                      stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="60" d=" M-324,0 C-324,0 324,0 324,0"></path>
+                  </g>
+                </g>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+    </nav>
+    <section class="section hero-section">
+      <div class="container">
+        <div data-w-id="653d6031-aa80-5f0c-561b-f7d572d05b1e" class="hero-wrapper"
+          style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          <img src="./files/icon.png" loading="lazy" width="102" alt="" class="hero-logo">
+          <h1 class="content hidden" data-lang="en">Plan your travels easily.<br><span class="blue-underline">All in one
+              place.</span></h1>
+          <h1 class="content hidden" data-lang="it">Viaggia senza pensieri.<br><span class="blue-underline">Tieni tutto
+              a portata di mano.</span></h1>
+
+          <p class="content hidden hero-description" data-lang="en">
+            The AI-powered super-app for seamless travel planning, tour building and itinerary management.</p>
+          <p class="content hidden hero-description" data-lang="it">La super-app basata su IA per la pianificazione e la
+            gestione di itinerari
+            di viaggi</p>
+          <!--<a
+            href=""
+            target="_blank" class="button-primary w-inline-block"><img
+              src="./files/65bf84149cd3b97eab44ce8c_arrow-down-circle.svg"
+              loading="lazy" alt="" class="button-arrow"
+              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-88.5753deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+            <div>Join waitlist</div>
+          </a>-->
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container-large">
+        <div class="gallery-wrapper2">
+
+
+          <div class="luc">
+            <div class="lucc">
+              <div class="flex justify-center">
+                <h3
+                  class="line w-full max-w-[320px] p-6 text-center text-27 font-semibold sm:text-19 2xl:max-w-[410px] 2xl:text-27 content hidden"
+                  data-lang="en">Have a less stressful and well-organized journey.</h3>
+                <h3
+                  class="line w-full max-w-[320px] p-6 text-center text-27 font-semibold sm:text-19 2xl:max-w-[410px] 2xl:text-27 content hidden"
+                  data-lang="it">Organizza bene il viaggio, senza stress e rischi.</h3>
+              </div>
+              <div class="tit" style="padding:0px 30px">
+                <div>
+                  <img align="bottom"
+                    alt="Mobile app screenshot showing the discover community feature through which the user can discover and join new communities"
+                    loading="lazy" width="762" height="1400" decoding="async" data-nimg="1"
+                    class="rounded-[20px] border-4 border-[var(--screen-border,#EAEEF1)] bg-[var(--screen-border,#EAEEF1)] md:rounded-[24px] overflow-hidden !rounded-b-none border-b-0"
+                    style="color:transparent;user-select:none" srcset="./files/home.png 1x, ./files/home.png 2x"
+                    src="./files/home.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="luc">
+            <div class="a">
+              <div class="flex justify-center">
+                <h3 style="padding-top:0; font-size: 1.4875rem;"
+                  class="content hidden" data-lang="it">
+                  Non perderti nessuna tappa del viaggio</h3>
+                  <h3 style="padding-top:0; font-size: 1.4875rem;"
+                  class="content hidden" data-lang="en">
+                  Don’t miss a single step of the journey</h3>
+              </div>
+              <div class="img-cont-cont">
+                <div class="img-cont" style="padding:0px 50px">
+                  <img
+                    alt="" loading="lazy" width="922" height="576" decoding="async" data-nimg="1"
+                    style="color:transparent;user-select:none"
+                    srcset="./files/cov.png 2x"
+                    src="./files/cov.png">
+                </div>
+              </div>
+            </div>
+            <div
+              class="b">
+              <div class="flex justify-center">
+                <h3 style="padding-top:0; font-size: 1.4875rem;"
+                class="content hidden" data-lang="en">
+                  Create the best travel experience, with no complexity</h3>
+                  <h3 style="padding-top:0; font-size: 1.4875rem;"
+                  class="content hidden" data-lang="it">
+                Pianifica lesperienza migliore, senza complicazioni.</h3>
+              </div>
+              <div class="img-cont-cont">
+                <div class="img-cont" style="padding:0px 50px">
+                  <img 
+                    alt="Bottom portion of a mobile app screenshot showing the possibility to join token gated channels by hodling tokens, collectibles and more"
+                    loading="lazy" width="668" height="560" decoding="async" data-nimg="1"
+                    class="rounded-[20px] border-4 border-[var(--screen-border,#EAEEF1)] bg-[var(--screen-border,#EAEEF1)] md:rounded-[24px] overflow-hidden !rounded-t-none border-t-0"
+                    style="color:transparent;user-select:none"
+                    srcset="./files/cover-h.png 1x, ./files/cover-h.png 2x"
+                    src="./files/cover-h.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="luc">
+            <div class="lucc-v" style="padding: 0px 25px;">
+              <div class="max-w-[310px] sm:max-w-[264px] lg:max-w-[280px] 2xl:max-w-[384px]">
+                <div class="video-cont">
+                  <video class="scale-[1.02]" autoplay="" loop="" playsinline="" muted="" 
+                  style="aspect-ratio:0.48;clip-path:inset(2px 2px);-webkit-filter: brightness(108.5%); ">
+                    <source src="./files/video.webm" type="video/webm">
+                    <source src="./files/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                 
+                </div>
+              </div>
+              <img aria-hidden="true" alt="" decoding="async" data-nimg="1"
+                class="absolute inset-0 z-[-1]" style="color:transparent;user-select:none; height: 100%; width: 100%;"
+                srcset="./files/screen-texture.webp 1x, ./files/screen-texture.webp 2x"
+                src="./files/screen-texture.webp">
+            </div>
+          </div>
+          <!--<div class="video-overlay">
+            <video class="gallery-image" src="./files/new_cro.mp4" autoplay loop muted></video>
+          </div>-->
+
+          <!--<img src="./files/home.png" loading="lazy"
+            sizes="(max-width: 479px) 87vw, (max-width: 767px) 320px, (max-width: 991px) 32vw, 31vw" alt=""
+            id="w-node-a6cc5305-9daf-8f6d-8819-a57e73ee4cf9-8e01a7e0"
+            srcset="./files/home.pngp 500w, ./files/home.png 738w"
+            class="gallery-image"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">-->
+
+          <!--<img src="./files/cover.png" loading="lazy"
+            sizes="(max-width: 479px) 87vw, (max-width: 767px) 320px, (max-width: 991px) 28vw, 27vw" alt=""
+            id="w-node-_70428380-a9ac-b15f-2fef-8e3638baa98a-8e01a7e0"
+            srcset="./files/cover.png 500w, ./files/cover.png 640w" class="gallery-image"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">-->
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section overview-section" style="text-align: center;">
+      <div class="container">
+        <div class="overview-wrapper">
+          <div class="overview-top"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            <h2 data-lang="en" class="content hidden">Personalize your travel with customizable widgets</h2>
+            <h2 data-lang="it" class="content hidden">Personalizza il viaggio con i widget che ti servono</h2>
+            <!--<p data-lang="it" class="content hidden">I widget ti permettono di avere ogni tipo di informazione aggiutiva sul viaggio, come il meteo della zona
+              di soggiorno, i documenti da portare, i vestiti consigliati , le notifiche sul volo, le spese da tracciare, il fuso orario, le prese elettriche da usare e tanti altri.</p>
+              <p data-lang="en" class="content hidden">Widgets allow you to have all kinds of additional information about your trip, such as the local weather, useful documents, dress, packing lists, flight notifications, expense tracking, time zone, electrical outlet types, and much more.</p>-->
+          </div>
+
+          <div class="overview-grid">
+
+            <!--<div id="w-node-_2bb71ef5-4dbc-c41c-ac13-6ca312bc9f38-8e01a7e0"
+              data-w-id="2bb71ef5-4dbc-c41c-ac13-6ca312bc9f38"
+              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"
+              class="overview-highlight">
+              <div class="overview-content">
+                <div class="heading-medium">AI personal travel agent</div>
+                <p>Implement an intelligent recommendation system powered by AI to analyze user preferences and create
+                  personalized playlists tailored to individual tastes.</p>
+              </div>
+              <img src="./files/65bf8ef08120db5049763411_overview-desktop.webp" loading="lazy" width="570.5"
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 30vw, 29vw" alt=""
+                srcset="https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8ef08120db5049763411_overview-desktop-p-500.webp 500w, https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8ef08120db5049763411_overview-desktop-p-800.webp 800w, https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8ef08120db5049763411_overview-desktop.webp 1141w"
+                class="overview-image-desktop"><img src="./files/65bf8eef7e4ae2e81d92feb9_overview-mobile.webp"
+                loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, 100vw"
+                srcset="https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8eef7e4ae2e81d92feb9_overview-mobile-p-500.webp 500w, https://assets-global.website-files.com/65bf7d3d6bb1c09b8e01a7d0/65bf8eef7e4ae2e81d92feb9_overview-mobile.webp 684w"
+                alt="" class="overview-image-mobile">
+            </div>-->
+
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Itinerario</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Tutte le attività da
+                  fare, organizzate giorno per giorno</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Itinerary</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">Easy, visually organized
+                  travel plan tracer</span></p>
+              <img src="./files/itin.png" loading="lazy" alt="">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Documenti</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Biglietto volo,
+                  prenotazioni viaggio, hotel, musei, passaporto
+                </span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Documents</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">Boarding pass, trip
+                  bookings, hotel, museum, passport
+                </span></p>
+              <img src="./files/doc.png" loading="lazy" alt="">
+            </div>
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Mappa</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Tutte la tappe da
+                  visitare e come arrivarci</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Maps</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">All the stops to visit
+                  and how to get there</span></p>
+              <img src="./files/map.jpeg" loading="lazy" alt="">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Foto</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">I luoghi del tuo viaggio,
+                  da conservare e
+                  condividere</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Photos</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">The places of your
+                  journey, to save and share</span></p>
+              <img src="./files/gallery.webp" loading="lazy" alt="Gallery">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Meteo</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Avvisi e previsioni
+                  meteo, prima e durante il viaggio</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Weather</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">Weather alerts and
+                  forecasts, before and during the trip</span></p>
+
+              <img src="./files/meteo.webp" loading="lazy" alt="">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Cose da portare</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Checklist valigia in base
+                  alla destinazione del viaggio</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Packing list</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">Packing checklist based
+                  on your travel destination</span></p>
+              <img src="./files/checklist.png" loading="lazy" alt="">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Notifiche</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Avvisi, notifiche e
+                  allarmi per non dimenticare nulla</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Reminders</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">Alerts, notifications,
+                  and reminders to ensure you don’t forget anything</span></p>
+              <img src="./files/flight.png" loading="lazy" alt="">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Appunti di viaggio</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Note personali, cose da
+                  ricordare o appuntarsi durante il viaggio</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Notes</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">Personal notes, things to
+                  remember or save during the trip</span></p>
+              <img src="./files/note.jpeg" loading="lazy" alt="">
+            </div>
+
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium content hidden" data-lang="it">Contatti</h3>
+              <p class="content hidden" data-lang="it"><span style="font-size:16px;color:gray">Rimani in contatto con le
+                  persone con cui hai condiviso viaggio</span></p>
+              <h3 class="heading-medium content hidden" data-lang="en">Contacts</h3>
+              <p class="content hidden" data-lang="en"><span style="font-size:16px;color:gray">Stay in touch with the
+                  people you’ve shared your journey with</span></p>
+              <img src="./files/contacts.webp" loading="lazy"
+                alt="">
+            </div>
+            <!--<div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">NFT</h3>
+              <p><span style="font-size:16px;color:gray">Mint a unique NFT of your trip to certify the experience</span></p>
+              <img src="https://www.any.do/_next/static/media/feature-family-organize.05a90416.webp" loading="lazy"
+                alt="">
+            </div>
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Loyalty card</h3>
+              <p><span style="font-size:16px;color:gray">Rewards in Bitcoin for your travel activities and milestones</span></p>
+              <img src="https://www.any.do/_next/static/media/feature-family-organize.05a90416.webp" loading="lazy"
+                alt="">
+            </div>
+            <div id="w-node-_8ba73dfb-a57f-13a8-81f4-7a7dffd1c43a-8e01a7e0" class="overview-card">
+              <h3 class="heading-medium">Wallet</h3>
+              <p><span style="font-size:16px;color:gray">Integra un wallet per inviare e ricevere pagamenti in loco</span></p>
+              <img src="https://www.any.do/_next/static/media/feature-family-organize.05a90416.webp" loading="lazy"
+                alt="">
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <h4 class="content hidden" data-lang="it" style="margin-top: 50px;">e altri da scoprire...</h4>
+      <h4 class="content hidden" data-lang="en" style="margin-top: 50px;">and many more to explore...</h4>
+
+    </section>
+
+
+    </section>
+    <section class="section features-white">
+      <div class="container">
+        <div class="features-wrapper" style="grid-column-gap: 110px;">
+          <div class="features-image-wrapper" style="background-color: rgba(113 64 253 / 10%);
+          padding: 60px 0px;
+          border-radius: 32px; background-image: url(https://www.travely.to/files/screen-texture.webp);"><img src="./files/start.png" loading="lazy" width="330"
+              sizes="(max-width: 479px) 87vw, 330px" alt="" class="features-image"
+              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          </div>
+          <div class="features-content"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            <div class="inline-flex">
+              <div
+                class="flex h-8 cursor-default select-none items-center justify-center gap-1 rounded-full border pl-2 pr-3"
+                style="color: rgb(113, 64, 253); background-color: rgba(113, 64, 253, 0.05); border-color: rgba(113, 64, 253, 0.3); padding-right: .75rem;
+            padding-left: .5rem;
+            border-width: 1px; border-radius: 9999px;
+            gap: .25rem;
+            border-radius: 9999px;
+            height: 2rem;
+            justify-content: center;
+            align-items: center;
+            display: flex;">
+                <svg color="rgba(113 64 253 / 100%)" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 20 20" focusable="false" aria-hidden="true" style="vertical-align: middle;">
+                  <path fill="rgba(113 64 253 / 100%)" fill-rule="evenodd"
+                    d="M1.9 8.5a6.6 6.6 0 0 1 6.6-6.6h2.638a6.962 6.962 0 0 1 3.53 12.962l-5.364 3.155-.904.532V15.1a6.6 6.6 0 0 1-6.5-6.6Zm6.6-5.4a5.4 5.4 0 0 0 0 10.8h1.1v2.551l4.46-2.623A5.761 5.761 0 0 0 11.138 3.1H8.5ZM7 6.4h6v1.2H7V6.4Zm4.5 3H7v1.2h4.5V9.4Z"
+                    clip-rule="evenodd"></path>
+                </svg><span class="text-15 font-medium"
+                  style="font-size: .9375rem;line-height: 1.359375rem;font-weight: 500;">AI POWERED BY CHATGPT</span>
+              </div>
+            </div>
+            <h2 class="content hidden" data-lang="en">Your Smart Travel Companion</h2>
+            <h2 class="content hidden" data-lang="it">Il tuo compagno di viaggio smart</h2>
+            <div class="features-description content hidden" data-lang="en">
+              <p>Save precious time and effort with your all-new AI assistant.Whether you’re a solo backpacker or a
+                professional travel agent, our tool powered by artificial intelligence simplifies the planning,
+                suggesting
+                and organizing of your trips.<br><br>
+                The main benefits of an AI-powerd itinerary management include a significantly reduced workload for
+                travel
+                agents and frequent travellers, while individuals enjoy a less stressful and well-organized travel
+                experience based on:</p>
+              <h4>Where you’re planning to go</h4>
+              <h4>With whom you’re traveling</h4>
+              <h4>Your personal preferences</h4>
+            </div>
+            <div class="features-description content hidden" data-lang="it">
+              <p>La pianificazione di un viaggio può essere un'attività stancante. Che tu sia un viaggiatore solitario o
+                un agente di viaggio professionista, il nostro strumento, alimentato dall’intelligenza artificiale,
+                semplifica la pianificazione, la proposta e l’organizzazione dell'itinerario di viaggio.<br><br>
+                I principali vantaggi della gestione degli itinerari con l’intelligenza artificiale includono una
+                significativa riduzione del carico di lavoro per gli agenti di viaggio e per i viaggiatori frequenti,
+                suggerimento di attività basate sulle proprie esperienza mentre gli individui possono godere di
+                un’esperienza di viaggio meno stressante e ben organizzata basata su:</p>
+              <h4>Dove si sta andando</h4>
+              <h4>Con chi stai viaggiando</h4>
+              <h4>Le tue preferenze di viaggio</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features-gray">
+      <div class="container">
+        <div class="features-wrapper reverse" style="grid-column-gap: 110px;">
+          <div class="features-image-wrapper" style="background-color: rgba(246 176 60 / 10%);
+          padding: 60px 0px;
+          border-radius: 32px;background-image: url(https://www.travely.to/files/screen-texture.webp);"><img src="./files/share.jpg" loading="lazy" width="330"
+              sizes="(max-width: 479px) 87vw, 330px" alt="" class="features-image"
+              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          </div>
+          <div class="features-content"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+
+            <div
+              class="flex h-8 cursor-default select-none items-center justify-center gap-1 rounded-full border pl-2 pr-3"
+              style="color: rgba(246 176 60 / 100%);
+              background-color: rgba(246 176 60 / 5%);
+              border-color: rgba(246 176 60 / 30%); padding-left: .5rem; 
+          border-width: 1px; border-radius: 9999px; padding-right: .75rem;
+          gap: .25rem;
+          border-radius: 9999px;
+          height: 2rem;
+          justify-content: center;
+          align-items: center;
+          display: flex;"><svg color="rgba(42 121 155 / 100%)" width="20" height="20"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" focusable="false" aria-hidden="true"
+                style="font-size: .9375rem;line-height: 1.359375rem;font-weight: 500;">
+                <path fill="rgba(246 176 60 / 100%)" fill-rule="evenodd"
+                  d="M17.6 4c0-.872-.717-1.628-1.642-1.564A14.574 14.574 0 0 0 2.436 15.958C2.371 16.883 3.128 17.6 4 17.6h7c.906 0 1.536-.726 1.688-1.474a4.4 4.4 0 0 1 3.438-3.438c.748-.152 1.474-.782 1.474-1.688V4Zm-1.558-.367c.176-.012.358.135.358.367v1.416A11.6 11.6 0 0 0 5.415 16.4H4c-.232 0-.379-.181-.367-.358A13.374 13.374 0 0 1 16.042 3.633ZM6.617 16.4h1.804A8.6 8.6 0 0 1 16.4 8.421V6.617A10.4 10.4 0 0 0 6.617 16.4ZM16.4 9.624A7.4 7.4 0 0 0 9.624 16.4H11c.198 0 .444-.178.511-.513a5.6 5.6 0 0 1 4.376-4.375c.335-.068.513-.314.513-.512V9.624Z"
+                  clip-rule="evenodd"></path>
+              </svg><span class="text-15 font-medium"
+                style="font-size: .9375rem;line-height: 1.359375rem;font-weight: 500;">COMMUNITY</span></div>
+                <h2 class="content hidden" data-lang="en">Connect and Share your Trips</h2>
+                <h2 class="content hidden" data-lang="it">Scopri e condividi i tuoi viaggi</h2>
+
+            <p class="features-description content hidden" data-lang="en">AI is a big thing but alone is not enough
+              (yet).<br>Building a community is at
+              the heart of our app. Share your trips with friends, clients, or fellow travelers, and seek advice from
+              experienced globetrotters. <br><br>Engage in real-time chats, share tips that make travel planning, tour
+              building,
+              and itinerary management more enjoyable and seamless than ever. Join our community and make every journey
+              a
+              shared adventure.</p>
+            <p class="features-description content hidden" data-lang="it">L’AI è una grande innovazione, ma da sola non
+              basta.<br>
+              Costruire una community, l'aspetto social e condividere i tuoi viaggi con amici, clienti o compagni di
+              avventure, cercare consigli da viaggiatori "esperti". <br><br>Partecipa a chat in tempo reale, condividi
+              suggerimenti che rendono la pianificazione dei viaggi, la creazione di tour e la gestione degli itinerari
+              più piacevoli e senza intoppi che mai. Unisciti alla nostra comunità e trasforma ogni viaggio in
+              un’avventura condivisa.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features-white">
+      <div class="container">
+        <div class="features-wrapper" style="grid-column-gap: 110px;">
+          <div class="features-image-wrapper" style="background-color:rgba(236 38 108 / 10%);
+          padding: 60px 0px;
+          border-radius: 32px;background-image: url(https://www.travely.to/files/screen-texture.webp);"><img src="./files/ai.jpeg" loading="lazy" width="330"
+              sizes="(max-width: 479px) 87vw, 330px" alt="" class="features-image"
+              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          </div>
+          <div class="features-content"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            <div
+              class="flex h-8 cursor-default select-none items-center justify-center gap-1 rounded-full border pl-2 pr-3"
+              style="color: rgb(236, 38, 108); background-color: rgba(236, 38, 108, 0.05); border-color: rgba(236, 38, 108, 0.3); padding-left: .5rem; padding-right: .75rem;
+          border-width: 1px; border-radius: 9999px;
+          gap: .25rem;
+          border-radius: 9999px;
+          height: 2rem;
+          justify-content: center;
+          align-items: center;
+          display: flex;"><svg color="rgba(236 38 108 / 100%)" width="20" height="20"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" focusable="false" aria-hidden="true"
+                style="font-size: .9375rem;line-height: 1.359375rem;font-weight: 500;">
+                <path fill="rgba(236 38 108 / 100%)" fill-rule="evenodd"
+                  d="M3.6 10a6.4 6.4 0 1 1 12.8 0 6.4 6.4 0 0 1-12.8 0ZM10 2.4a7.6 7.6 0 1 0 0 15.2 7.6 7.6 0 0 0 0-15.2ZM8.218 9.483c.043-.104.085-.201.126-.29l2.463 2.463a7.357 7.357 0 0 1-.29.126 14.18 14.18 0 0 1-1.519.513c-.537.15-1.05.265-1.442.32a3.916 3.916 0 0 1-.196.025c.006-.059.014-.124.024-.196.056-.391.17-.906.32-1.443.15-.535.331-1.075.514-1.518Zm3.564 1.034a6.543 6.543 0 0 1-.127.29L9.194 8.344a7.35 7.35 0 0 1 .29-.126c.442-.182.983-.363 1.518-.513a11.8 11.8 0 0 1 1.443-.32c.072-.01.137-.019.195-.025a4.632 4.632 0 0 1-.024.196c-.056.391-.17.906-.32 1.443-.15.535-.33 1.075-.513 1.518Zm1.433-4.333a.815.815 0 0 1 .391.21c.137.137.188.3.21.39.024.105.033.21.035.305a3.88 3.88 0 0 1-.048.637 12.98 12.98 0 0 1-.353 1.596c-.16.57-.354 1.156-.559 1.652a6.88 6.88 0 0 1-.32.682 2.41 2.41 0 0 1-.38.536 2.407 2.407 0 0 1-.536.38c-.2.11-.433.218-.681.32-.496.204-1.083.399-1.652.559-.568.159-1.137.287-1.596.353a3.987 3.987 0 0 1-.638.048 1.475 1.475 0 0 1-.303-.036.815.815 0 0 1-.391-.21.815.815 0 0 1-.21-.39 1.473 1.473 0 0 1-.036-.304c-.004-.19.016-.41.048-.638.066-.46.194-1.028.353-1.596.16-.57.355-1.156.56-1.652.101-.248.209-.481.319-.681.105-.193.232-.389.38-.537a2.42 2.42 0 0 1 .536-.38c.2-.11.434-.217.682-.32a15.287 15.287 0 0 1 1.652-.558 13.111 13.111 0 0 1 1.596-.353 3.88 3.88 0 0 1 .637-.048c.094.002.2.01.304.035Z"
+                  clip-rule="evenodd"></path>
+              </svg><span class="text-15 font-medium"
+                style="font-size: .9375rem;line-height: 1.359375rem;font-weight: 500;">AUTOMATION</span></div>
+                <h2 class="content hidden" data-lang="en">Instant Trip Organizer</h2>
+                <h2 class="content hidden" data-lang="it">Organizza, prenota e parti</h2>
+
+            <p class="features-description content hidden" data-lang="en">Automate your travel arrangements by
+              seamlessly importing all your travel
+              documents, bookings, and reservations, including PDF or confirmation emails for accommodations and
+              flights, car rentals, parking and itineraries.<br><br>Create automatically an entire trip from a document or
+              add a stop to an existing journey, then refine it later with personalized touches.<br>Most
+              importantly, your privacy is our top priority—we don’t store your information, ensuring your data remains
+              secure and confidential.</p>
+            <p class="features-description content hidden" data-lang="it">Automatizza i tuoi viaggi importando
+              facilmente tutti i tuoi documenti, prenotazioni e conferme, inclusi PDF o email di conferma per alloggi,
+              voli, noleggi auto, parcheggi e itinerari.<br>Crea automaticamente un intero viaggio da un documento
+              oppure aggiungi una tappa a un viaggio già esistente, per poi rifinirlo organizzando più in dettaglio le
+              tappe.<br><br>
+              La tua privacy è la nostra priorità assoluta: non conserviamo le tue informazioni, garantendo che i tuoi
+              dati rimangano sicuri e riservati.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="waitlist" style="padding-bottom: 100px;">
+      <div class="container">
+        <div class="cta-wrapper"
+          style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          <h1 class="content hidden" data-lang="en">We're launching soon</h1>
+          <h1 class="content hidden" data-lang="it">Stiamo arrivando</h1>
+
+          <p class="content hidden hero-description" data-lang="en">
+            Currently in beta testing, we are working hard to enhance and simplify the travel experience. Love to
+            travel? Are you a travel agent? Want to collaborate with us? <a
+              href="mailto:&#99;&#105;&#97;&#111;&#64;&#116;&#114;&#97;&#118;&#101;&#108;&#121;&#46;&#116;&#111;"><strong>Write
+                to us</strong></a>
+            <!--In the meantime, make sure to sign up for our waitlist for future updates!-->
+          </p>
+          <p class="content hidden hero-description" data-lang="it">
+            Attualmente in fase di beta testing, lavoriamo per migliorare e semplificare l'esperienza del viaggio. Ti
+            piace viaggiare? Sei un agente di viaggio? Vuoi collaborare con noi? <a
+              href="mailto:&#99;&#105;&#97;&#111;&#64;&#116;&#114;&#97;&#118;&#101;&#108;&#121;&#46;&#116;&#111;"><strong>Scrivici
+                ora</strong></a>
+            <!--Nel frattempo, iscriviti alla nostra lista d'attesa per ricevere aggiornamenti futuri!-->
+          </p>
+          <div class="framer-qjlo3v-container">
+            <div class="framer-6YQAR framer-1e8mxh7 framer-v-1e8mxh7" data-framer-name="Variant 1" tabindex="0"
+              style="opacity: 1;">
+              <div class="framer-1m0tuk2-container" style="opacity: 1;">
+                <div
+                  style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <!-- @format --> 
+
+                  <!--    Hey 👋 
+                  Here is your form html snippet, feel free to customize everything. 
+                  Waitless Team   -->
+
+                  <style>
+                    .container-69e6d {
+                      align-items: center;
+                      justify-content: center;
+                      width: 100%;
+                    }
+
+                    .container-input-69e6d {
+                      width: 100%;
+                      position: relative;
+                    }
+
+                    .form-69e6d {
+                      /* fixed */
+                      width: 100% !important;
+                      display: flex !important;
+                      align-items: center !important;
+                      gap: 0 !important;
+                      position: relative !important;
+                      border: 1px solid !important;
+                      transition: all 0.15s ease !important;
+
+                      /* computed */
+                      border-color: #E5E5E5 !important;
+                      border-width: 1px !important;
+                      background-color: #F8F8F8 !important;
+                      border-radius: 12px !important;
+                      height: 62px;
+                    }
+
+                    .input-69e6d {
+                      /* fixed */
+                      flex: 1 !important;
+                      height: 100% !important;
+                      padding: 0 16px !important;
+                      background: transparent !important;
+                      border: none !important;
+                      outline: none !important;
+
+                      /* computed */
+                      color: #000000 !important;
+
+                      font-size: 16px;
+                    }
+
+                    .input-69e6d::placeholder {
+                      /* computed */
+                      color: #00000060;
+                    }
+
+                    .cta-69e6d {
+                      /* fixed */
+                      transition: all 0.2s ease;
+                    }
+
+                    .loading-69e6d {
+                      /* fixed */
+                      position: absolute;
+                      top: 48%;
+                      top: calc(50% - (1px / 2));
+                      width: calc(100% - 32px);
+                      transition: all 0.2s ease;
+                    }
+
+                    .button-69e6d {
+                      /* fixed */
+                      position: relative;
+                      width: fit-content;
+                      transition: all 0.2s ease;
+                      min-width: 60px;
+                      height: calc(100% - 8px);
+                      margin: 4px;
+                      padding: 4px 16px;
+                      border-radius: 8px;
+                      font-weight: 600;
+                      align-items: center;
+                      cursor: pointer;
+                      border: none;
+                      outline: none;
+
+                      /* computed */
+                      background-color: #000000;
+                      border-radius: 8px;
+                      color: #ffffff;
+
+                      font-size: 16px;
+                    }
+
+                    .form-success-69e6d {
+                      align-items: center;
+                      justify-content: center;
+                      width: 100%;
+                    }
+
+                    .form-success-message-69e6d {
+                      font-family: inherit, sans-serif;
+                      color: #00000080;
+                      font-size: 16px;
+                    }
+
+                    .form-error-69e6d {
+                      align-items: center;
+                      justify-content: center;
+                      width: 100%;
+                    }
+
+                    .form-error-message-69e6d {
+                      font-family: inherit, sans-serif;
+                      color: #0000008f;
+                      font-size: 16px;
+                    }
+
+                    .form-back-button-69e6d {
+                      color: #6b7280;
+                      font: 14px, Inter, sans-serif;
+                      margin: 10px auto;
+                      text-align: center;
+                      background: transparent;
+                      border: none;
+                      cursor: pointer;
+                    }
+
+                    .pulse-dot-69e6d {
+                      border-radius: 50%;
+                      width: 8px;
+                      height: 8px;
+                      animation: pulse 2s infinite;
+                    }
+
+                    @keyframes shake {
+
+                      0%,
+                      100% {
+                        transform: translateX(0);
+                      }
+
+                      25% {
+                        transform: translateX(-2px);
+                      }
+
+                      75% {
+                        transform: translateX(2px);
+                      }
+                    }
+
+                    .shake-input-69e6d {
+                      animation: shake 0.2s ease-in-out both;
+                      transform: translate3d(0, 0, 0);
+                      backface-visibility: hidden;
+                      perspective: 1000px;
+                    }
+
+                    .loading-bar-69e6d {
+                      width: 100%;
+                      height: 1px;
+                      background-color: #ffffff37;
+                      border-radius: 12px;
+                      overflow: hidden;
+                      position: relative;
+                      transition: all 0.2s ease;
+                    }
+
+                    .loading-pill-69e6d {
+                      width: 50%;
+                      height: 100%;
+                      background-color: #ffffff67;
+                      position: absolute;
+                      left: -30%;
+                      border-radius: 12px;
+                      animation: slide 1s infinite;
+                    }
+
+                    @keyframes slide {
+                      0% {
+                        left: -50%;
+                      }
+
+                      50% {
+                        left: 100%;
+                      }
+
+                      100% {
+                        left: -50%;
+                      }
+                    }
+                  </style>
+
+                  <!--<div class="container-69e6d" style="display: flex">
+                  <form autocomplete="off" class="form-69e6d" style="display: flex"
+                    action="https://wt.ls/api/v1/subscribe/69e6d583-9ceb-4423-867c-90a1adbdc90b" method="POST">
+                    <input type="text" style="display: inline-flex" class="input-69e6d" name="email"
+                      placeholder="Enter your email" required="">
+
+                    <button type="submit" class="button-69e6d">
+                      <div class="cta-69e6d" style="opacity: 1; display: block">
+                        Join waitlist
+                      </div>
+                      <div class="error-69e6d" style="opacity: 0; display: none"></div>
+                      <div class="loading-69e6d" style="opacity: 0">
+                        <div class="loading-bar-69e6d">
+                          <div class="loading-pill-69e6d"></div>
+                        </div>
+                      </div>
+                    </button>
+                  </form>
+                </div>-->
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <div class="section footer-top">
+        <div class="container">
+          <div class="footer-wrapper"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+            <a href="#" aria-current="page" class="w-inline-block w--current" style="display: inline-block;">        <img src="./files/logo_black_big.svg" alt="Travely logo" width="90">
+            </a>
+            <div class="footer-menu">
+              <span style="font-size: 14px;">Copyright © 2024 Covenant Srl. All rights reserved.</span>
+              <a href="/agency.html" class="nav-link">Agency version</a>
+              <!--<a href="/job.html" class="nav-link">Jobs</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<div class="section footer-bottom">
+      <div class="container">
+        <div class="footer-wrapper bottom"
+          style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          <div class="footer-copyright">Copyright © 2024 Covenant Srl. All rights reserved.</div>
+          <div class="footer-menu"><a href="#" class="footer-secondary-link">Terms and conditions</a><a
+              href="#" class="footer-secondary-link">Privacy
+              policy</a>
+          </div>
+        </div>
+      </div>-->
+    </section>
+  </div>
+  <script src="./files/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="./files/webflow.142103ecd.js" type="text/javascript"></script>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const userLang = navigator.language || navigator.userLanguage;
+    console.log('Detected Language:', userLang);
+    const lang = userLang.startsWith('it') ? 'it' : 'en';
+    console.log('Using Language:', lang);
+
+    document.querySelectorAll('.content').forEach(element => {
+      console.log('Element Language:', element.getAttribute('data-lang'));
+      if (element.getAttribute('data-lang') === lang) {
+        console.log('Showing element:', element);
+        element.classList.remove('hidden');
+      } else {
+        console.log('Hiding element:', element);
+      }
+    });
+  });
+</script>
+
+</html>
