@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400.12" height="142.9" viewBox="0 0 700 250">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 180px;
+        text-anchor: middle;
+        font-family: "SF Pro Rounded";
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: #f96;
+      }
+    </style>
+  </defs>
+  <text id="Travely." class="cls-1" x="344.558" y="188.137"><tspan x="344.558">Travely<tspan class="cls-2">.</tspan></tspan></text>
+</svg>
